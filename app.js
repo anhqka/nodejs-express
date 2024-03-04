@@ -7,7 +7,7 @@ import userRouter from "./routes/user.js";
 import roomRouter from "./routes/room.js";
 import authenRouter from "./routes/authen.js";
 import mongoose from "mongoose";
-import logger from "./utils/logger.js";
+import { logger } from "./utils/logger.js";
 
 import {
   USERS_ROUTE,
