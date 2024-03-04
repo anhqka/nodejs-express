@@ -11,8 +11,8 @@ var server = http.createServer(app);
 server.listen(port, () => {
   if (process.env.PORT) {
     logger.log({
-      level: "error",
-      message: err,
+      level: "info",
+      message: process.env.PORT,
     });
     return;
   }
