@@ -7,7 +7,9 @@ import userRouter from "./routes/user.js";
 import roomRouter from "./routes/room.js";
 import authenRouter from "./routes/authen.js";
 import mongoose from "mongoose";
-import { 
+import logger from "./utils/logger.js";
+
+import {
   USERS_ROUTE,
   ROOMS_ROUTE,
   AUTHEN_ROUTE,
@@ -24,7 +26,12 @@ const limiter = rateLimit({
 const dbUrl =
   "mongodb+srv://unknow14svn:unknow14svn@chat.1ingaw1.mongodb.net/?retryWrites=true&w=majority&appName=chat";
 
-connectToDb().catch((err) => console.log(err));
+connectToDb().catch((err) =>
+  logger.log({
+    level: "error",
+    message: err,
+  })
+);
 
 async function connectToDb() {
   await mongoose.connect(dbUrl);
