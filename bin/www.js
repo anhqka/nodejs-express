@@ -1,5 +1,6 @@
 import app from "../app.js";
 import http from "http";
+import { logger } from "../utils/logger.js";
 
 const port = process.env.PORT || 8080;
 
