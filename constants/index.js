@@ -1,0 +1,14 @@
+import { AUTHEN_STATUS_CODE, AUTHEN_STATUS_DESCRIPTION } from "./status-result/authen.js";
+import { SEARCH_STATUS_CODE, SEARCH_STATUS_DESCRIPTION } from "./status-result/search.js";
+import { ERROR_STATUS_CODE, ERROR_STATUS_DESCRIPTION } from "./status-result/error.js";
+import { SUCCESS_STATUS_CODE } from "./status-result/success.js";
+
+export {
+  AUTHEN_STATUS_CODE,
+  AUTHEN_STATUS_DESCRIPTION,
+  SEARCH_STATUS_CODE,
+  SEARCH_STATUS_DESCRIPTION,
+  ERROR_STATUS_CODE,
+  SUCCESS_STATUS_CODE,
+  ERROR_STATUS_DESCRIPTION
+};

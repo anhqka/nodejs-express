@@ -1,0 +1,7 @@
+export const ERROR_STATUS_CODE = {
+  INTERNAL_SERVER_ERROR: "internal_server_error",
+};
+
+export const ERROR_STATUS_DESCRIPTION = {
+  INTERNAL_SERVER_ERROR: "INTERNAL SERVER ERROR",
+};
