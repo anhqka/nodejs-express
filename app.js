@@ -39,6 +39,8 @@ async function connectToDb() {
 
 app.use(limiter);
 
+app.set('trust proxy', true);
+
 app.use(morgan("combined"));
 
 app.use(express.json());
